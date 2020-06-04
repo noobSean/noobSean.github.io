@@ -9,6 +9,17 @@
       </tags>
   </entry>
   <entry>
+    <title>我的第一篇博客</title>
+    <url>/2019/06/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h3 id="Congratulation"><a href="#Congratulation" class="headerlink" title="Congratulation!"></a>Congratulation!</h3><p>这是第一次发表我的博客文章</p>
+
+<p><em>*test</em></p>
+]]></content>
+      <tags>
+        <tag>第一次发表</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo命令那些事</title>
     <url>/2020/06/02/hexo%E5%91%BD%E4%BB%A4%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
     <content><![CDATA[<p><strong>hexo clean</strong> 用于清除本地静态文件和DB.json文件<br><strong>hexo g -d</strong> 生成静态文件并部署<br><strong>hexo server</strong> 在服务器启动中，Hexo 会监视文件变动并自动更新<br><strong>hexo generate –watch</strong>  监视文件变动并立即重新生成静态文件</p>
@@ -18,18 +29,6 @@
       </categories>
       <tags>
         <tag>hexo命令</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>杂七杂八</title>
-    <url>/2020/05/29/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</url>
-    <content><![CDATA[<h3 id="Feelings"><a href="#Feelings" class="headerlink" title="Feelings"></a>Feelings</h3><p><strong>2020年5月24日</strong>这一天，我结束了我人生中第二次<strong>高考(专转本)</strong><a id="more"></a><br>目前自己的处境，可谓是”环境险恶”，做自己喜欢的web开发更是难上加难，同学们似乎都沉溺于自己的舒适圈，安于现状，看清现实的人微乎其微。也许我这是自命清高哈哈。在这里希望以后的自己不惧艰难险阻，吃下生活的苦，让自己过得更幸福，成为家里的顶梁柱！</p>
-]]></content>
-      <categories>
-        <category>随便写</category>
-      </categories>
-      <tags>
-        <tag>重拾梦想</tag>
       </tags>
   </entry>
   <entry>
@@ -45,6 +44,18 @@
       </categories>
       <tags>
         <tag>永不再犯</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂七杂八</title>
+    <url>/2020/05/29/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</url>
+    <content><![CDATA[<h3 id="Feelings"><a href="#Feelings" class="headerlink" title="Feelings"></a>Feelings</h3><p><strong>2020年5月24日</strong>这一天，我结束了我人生中第二次<strong>高考(专转本)</strong><a id="more"></a><br>目前自己的处境，可谓是”环境险恶”，做自己喜欢的web开发更是难上加难，同学们似乎都沉溺于自己的舒适圈，安于现状，看清现实的人微乎其微。也许我这是自命清高哈哈。在这里希望以后的自己不惧艰难险阻，吃下生活的苦，让自己过得更幸福，成为家里的顶梁柱！</p>
+]]></content>
+      <categories>
+        <category>随便写</category>
+      </categories>
+      <tags>
+        <tag>重拾梦想</tag>
       </tags>
   </entry>
   <entry>
@@ -74,16 +85,5 @@
       <categories>
         <category>随便写</category>
       </categories>
-  </entry>
-  <entry>
-    <title>我的第一篇博客</title>
-    <url>/2019/06/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h3 id="Congratulation"><a href="#Congratulation" class="headerlink" title="Congratulation!"></a>Congratulation!</h3><p>这是第一次发表我的博客文章</p>
-
-<p><em>*test</em></p>
-]]></content>
-      <tags>
-        <tag>第一次发表</tag>
-      </tags>
   </entry>
 </search>
