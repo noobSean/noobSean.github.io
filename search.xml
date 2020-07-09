@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo博客个性化历程</title>
+    <url>/2020/06/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<p><i>看</i>见别人靓丽且富有个性的博客，可把我馋死啦，可自己去实现各项功能的时候具烦啊啊啊啊啊啊！这hexo还是用swig来做模板引擎，之前闻所未闻(＃°Д°)，害！谁让自己是<b>菜鸡</b>呢（哭）<br>也不知道咱啥时候可以开始写技术博客，jio着自己啥也不会(￣m￣）)，也许真的要好好制定自己的学习路线了，就酱！拜~</p>
+]]></content>
+      <categories>
+        <category>随便写</category>
+      </categories>
+  </entry>
+  <entry>
     <title>hexo命令那些事</title>
     <url>/2020/06/02/hexo%E5%91%BD%E4%BB%A4%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
     <content><![CDATA[<p><strong>hexo clean</strong> 用于清除本地静态文件和DB.json文件<br><strong>hexo g -d</strong> 生成静态文件并部署<br><strong>hexo server</strong> 在服务器启动中，Hexo 会监视文件变动并自动更新<br><strong>hexo generate –watch</strong>  监视文件变动并立即重新生成静态文件</p>
@@ -13,9 +22,37 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo博客个性化历程</title>
-    <url>/2020/06/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8E%86%E7%A8%8B/</url>
-    <content><![CDATA[<p><i>看</i>见别人靓丽且富有个性的博客，可把我馋死啦，可自己去实现各项功能的时候具烦啊啊啊啊啊啊！这hexo还是用swig来做模板引擎，之前闻所未闻(＃°Д°)，害！谁让自己是<b>菜鸡</b>呢（哭）<br>也不知道咱啥时候可以开始写技术博客，jio着自己啥也不会(￣m￣）)，也许真的要好好制定自己的学习路线了，就酱！拜~</p>
+    <title>我的第一篇博客</title>
+    <url>/2019/06/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h3 id="Congratulation"><a href="#Congratulation" class="headerlink" title="Congratulation!"></a>Congratulation!</h3><p>这是第一次发表我的博客文章</p>
+
+<p><em>*test</em></p>
+]]></content>
+      <tags>
+        <tag>第一次发表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新手填坑1/100</title>
+    <url>/2020/05/29/%E6%96%B0%E6%89%8B%E5%A1%AB%E5%9D%911-100/</url>
+    <content><![CDATA[<h3 id="初级BUG拯救"><a href="#初级BUG拯救" class="headerlink" title="初级BUG拯救"></a>初级BUG拯救</h3><p>搭建hexo中控制台出现以下错误：</p>
+<p>YAMLException: can not read a block mapping entry....</p>
+
+<p>此类错误一般是由文章属性中<strong>缺少空格</strong>导致的，为一大忌，不可再犯！</p>
+]]></content>
+      <categories>
+        <category>BuG整合</category>
+      </categories>
+      <tags>
+        <tag>永不再犯</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里云白嫖活动</title>
+    <url>/2020/06/02/%E9%98%BF%E9%87%8C%E4%BA%91%E7%99%BD%E5%AB%96%E6%B4%BB%E5%8A%A8/</url>
+    <content><![CDATA[<h3 id="阿里云免费试用来啦！"><a href="#阿里云免费试用来啦！" class="headerlink" title="阿里云免费试用来啦！"></a>阿里云免费试用来啦！</h3><p>今天登上阿里云准备搞一个认证，突然看见右下角有个xxx试用，我抱着是广告的怀疑态度点了进去,结果发现全是一个月的零元试用！！！这波便宜不占白不占啊(笑哭)，我再去康康(≧∇≦)ﾉ</p>
+
+<p><a href="https://free.aliyun.com" target="_blank" rel="noopener">连接在这</a></p>
 ]]></content>
       <categories>
         <category>随便写</category>
@@ -46,63 +83,6 @@
       <tags>
         <tag>node初探</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>我的第一篇博客</title>
-    <url>/2019/06/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h3 id="Congratulation"><a href="#Congratulation" class="headerlink" title="Congratulation!"></a>Congratulation!</h3><p>这是第一次发表我的博客文章</p>
-
-<p><em>*test</em></p>
-]]></content>
-      <tags>
-        <tag>第一次发表</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>杂七杂八</title>
-    <url>/2020/05/29/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</url>
-    <content><![CDATA[<h3 id="Feelings"><a href="#Feelings" class="headerlink" title="Feelings"></a>Feelings</h3><p><strong>2020年5月24日</strong>这一天，我结束了我人生中第二次<strong>高考(专转本)</strong><a id="more"></a><br>目前自己的处境，可谓是”环境险恶”，做自己喜欢的web开发更是难上加难，同学们似乎都沉溺于自己的舒适圈，安于现状，看清现实的人微乎其微。也许我这是自命清高哈哈。在这里希望以后的自己不惧艰难险阻，吃下生活的苦，让自己过得更幸福，成为家里的顶梁柱！</p>
-]]></content>
-      <categories>
-        <category>随便写</category>
-      </categories>
-      <tags>
-        <tag>重拾梦想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>新手填坑1/100</title>
-    <url>/2020/05/29/%E6%96%B0%E6%89%8B%E5%A1%AB%E5%9D%911-100/</url>
-    <content><![CDATA[<h3 id="初级BUG拯救"><a href="#初级BUG拯救" class="headerlink" title="初级BUG拯救"></a>初级BUG拯救</h3><p>搭建hexo中控制台出现以下错误：</p>
-<p>YAMLException: can not read a block mapping entry....</p>
-
-<p>此类错误一般是由文章属性中<strong>缺少空格</strong>导致的，为一大忌，不可再犯！</p>
-]]></content>
-      <categories>
-        <category>BuG整合</category>
-      </categories>
-      <tags>
-        <tag>永不再犯</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/06/01/hello-world/</url>
-    <content><![CDATA[<h2 id="编程初体验的回忆"><a href="#编程初体验的回忆" class="headerlink" title="编程初体验的回忆"></a>编程初体验的回忆</h2><p>还曾记得六年前，在一所中专入学(计算机应用专业)，起因于读初中时每晚在游戏中厮杀(狂笑)。可未曾想到，这竟然为以后选择了职业道路而埋下了伏笔。<a id="more"></a>读中专一年级那会，我们学习C语言(你可能觉得就读一破中专还学编程？)，过程中充满了坎坷，从基本变量的定义，到排序算法的实现，但三年的学习从未接触过真实项目，后来参加了升学考试，读了专科，才系统的学习了工程化面向对象编程思想，web开发也正是那时才接触的。也希望自己脚踏实地，不卑不亢，一直坚持走下去。</p>]]></content>
-      <tags>
-        <tag>回忆</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阿里云白嫖活动</title>
-    <url>/2020/06/02/%E9%98%BF%E9%87%8C%E4%BA%91%E7%99%BD%E5%AB%96%E6%B4%BB%E5%8A%A8/</url>
-    <content><![CDATA[<h3 id="阿里云免费试用来啦！"><a href="#阿里云免费试用来啦！" class="headerlink" title="阿里云免费试用来啦！"></a>阿里云免费试用来啦！</h3><p>今天登上阿里云准备搞一个认证，突然看见右下角有个xxx试用，我抱着是广告的怀疑态度点了进去,结果发现全是一个月的零元试用！！！这波便宜不占白不占啊(笑哭)，我再去康康(≧∇≦)ﾉ</p>
-
-<p><a href="https://free.aliyun.com" target="_blank" rel="noopener">连接在这</a></p>
-]]></content>
-      <categories>
-        <category>随便写</category>
-      </categories>
   </entry>
   <entry>
     <title>求职琐事</title>
