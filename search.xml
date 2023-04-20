@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo命令那些事</title>
+    <url>/2020/06/02/hexo%E5%91%BD%E4%BB%A4%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
+    <content><![CDATA[<p><strong>hexo clean</strong> 用于清除本地静态文件和DB.json文件<br><strong>hexo g -d</strong> 生成静态文件并部署<br><strong>hexo server</strong> 在服务器启动中，Hexo 会监视文件变动并自动更新<br><strong>hexo generate –watch</strong>  监视文件变动并立即重新生成静态文件</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>hexo命令</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo博客个性化历程</title>
     <url>/2020/06/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8E%86%E7%A8%8B/</url>
     <content><![CDATA[<p><i>看</i>见别人靓丽且富有个性的博客，可把我馋死啦，可自己去实现各项功能的时候具烦啊啊啊啊啊啊！这hexo还是用swig来做模板引擎，之前闻所未闻(＃°Д°)，害！谁让自己是<b>菜鸡</b>呢（哭）<br>也不知道咱啥时候可以开始写技术博客，jio着自己啥也不会(￣m￣）)，也许真的要好好制定自己的学习路线了，就酱！拜~</p>
@@ -33,18 +45,6 @@
       </categories>
       <tags>
         <tag>node初探</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo命令那些事</title>
-    <url>/2020/06/02/hexo%E5%91%BD%E4%BB%A4%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
-    <content><![CDATA[<p><strong>hexo clean</strong> 用于清除本地静态文件和DB.json文件<br><strong>hexo g -d</strong> 生成静态文件并部署<br><strong>hexo server</strong> 在服务器启动中，Hexo 会监视文件变动并自动更新<br><strong>hexo generate –watch</strong>  监视文件变动并立即重新生成静态文件</p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>hexo命令</tag>
       </tags>
   </entry>
   <entry>
