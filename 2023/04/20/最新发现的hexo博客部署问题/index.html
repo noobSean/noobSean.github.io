@@ -30,7 +30,7 @@
 <meta property="og:description" content="时隔多日终于想起还有这个博客的存在！！在本地写好文案之后，生成、启动服务一气呵成，但在使用hexo -deploy后立刻打开自己的github pages站点文章却看不到，此时脑子里大大的问号(?)">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-04-20T05:41:41.000Z">
-<meta property="article:modified_time" content="2023-04-20T06:22:07.683Z">
+<meta property="article:modified_time" content="2023-04-20T06:23:54.551Z">
 <meta property="article:author" content="Aaron Wang">
 <meta property="article:tag" content="永不再犯">
 <meta name="twitter:card" content="summary">
@@ -221,7 +221,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-04-20 13:41:41 / 修改时间：14:22:07" itemprop="dateCreated datePublished" datetime="2023-04-20T13:41:41+08:00">2023-04-20</time>
+              <time title="创建时间：2023-04-20 13:41:41 / 修改时间：14:23:54" itemprop="dateCreated datePublished" datetime="2023-04-20T13:41:41+08:00">2023-04-20</time>
             </span>
 
           
@@ -258,7 +258,15 @@
       
         <h3 id="时隔多日终于想起还有这个博客的存在！！"><a href="#时隔多日终于想起还有这个博客的存在！！" class="headerlink" title="时隔多日终于想起还有这个博客的存在！！"></a>时隔多日终于想起还有这个博客的存在！！</h3><p>在本地写好文案之后，生成、启动服务一气呵成，但在使用<code>hexo -deploy</code>后<strong>立刻</strong>打开自己的github pages站点文章却看不到，此时脑子里大大的问号(?)</p>
 <a id="more"></a>
-<p>在经过一番google后，终于弄明白是自己没有弄清github pages工作流程，现总结如下：<br>*在本地写好之后通过<code>git push</code>到github仓库中<br>*每个仓库都有GitHub Actions,详细用法请<a href="https://docs.github.com/zh/actions/learn-github-actions/understanding-github-actions" target="_blank" rel="noopener">点击</a>，下面总结在本项目中的用处：<br>    &gt;将新代码推送到存储库的默认分支后触发GitHub 事件<br>    &gt;创建一个新的workflow，每个workflow运行都会生成一个实时图表，说明运行进度<br>    &gt;直到图表中出现绿色的√，则项目部署完毕<br>*打开github pages站点即能访问最新页面</p>
+<p>在经过一番google后，终于弄明白是自己没有弄清github pages工作流程，现总结如下：</p>
+<ul>
+<li>在本地写好之后通过<code>git push</code>到github仓库中</li>
+<li>每个仓库都有GitHub Actions,详细用法请<a href="https://docs.github.com/zh/actions/learn-github-actions/understanding-github-actions" target="_blank" rel="noopener">点击</a>，下面总结在本项目中的用处：<blockquote>
+<p>将新代码推送到存储库的默认分支后触发GitHub 事件<br>创建一个新的workflow，每个workflow运行都会生成一个实时图表，说明运行进度<br>直到图表中出现绿色的√，则项目部署完毕</p>
+</blockquote>
+</li>
+<li>打开github pages站点即能访问最新页面</li>
+</ul>
 <p>我忽略了上述整个过程，也是对GitHub Actions不够了解，再接再厉！！</p>
 
     </div>

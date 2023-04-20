@@ -27,6 +27,27 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo博客个性化历程</title>
+    <url>/2020/06/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<p><i>看</i>见别人靓丽且富有个性的博客，可把我馋死啦，可自己去实现各项功能的时候具烦啊啊啊啊啊啊！这hexo还是用swig来做模板引擎，之前闻所未闻(＃°Д°)，害！谁让自己是<b>菜鸡</b>呢（哭）<br>也不知道咱啥时候可以开始写技术博客，jio着自己啥也不会(￣m￣）)，也许真的要好好制定自己的学习路线了，就酱！拜~</p>
+]]></content>
+      <categories>
+        <category>随便写</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hexo命令那些事</title>
+    <url>/2020/06/02/hexo%E5%91%BD%E4%BB%A4%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
+    <content><![CDATA[<p><strong>hexo clean</strong> 用于清除本地静态文件和DB.json文件<br><strong>hexo g -d</strong> 生成静态文件并部署<br><strong>hexo server</strong> 在服务器启动中，Hexo 会监视文件变动并自动更新<br><strong>hexo generate –watch</strong>  监视文件变动并立即重新生成静态文件</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>hexo命令</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>并查集的C++实现</title>
     <url>/2023/04/03/%E5%B9%B6%E6%9F%A5%E9%9B%86%E7%9A%84C-%E5%AE%9E%E7%8E%B0/</url>
     <content><![CDATA[<p>首先要搞懂并查集的概念：<br><em>对一类不相交集合的数据组合起来进行查询叫并查集</em><br>做此次笔记的起因是leetcode第724题：寻找数组的中心下标,网友评论说可以用并查集来实现，故来温习一下</p>
@@ -52,9 +73,17 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo博客个性化历程</title>
-    <url>/2020/06/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8E%86%E7%A8%8B/</url>
-    <content><![CDATA[<p><i>看</i>见别人靓丽且富有个性的博客，可把我馋死啦，可自己去实现各项功能的时候具烦啊啊啊啊啊啊！这hexo还是用swig来做模板引擎，之前闻所未闻(＃°Д°)，害！谁让自己是<b>菜鸡</b>呢（哭）<br>也不知道咱啥时候可以开始写技术博客，jio着自己啥也不会(￣m￣）)，也许真的要好好制定自己的学习路线了，就酱！拜~</p>
+    <title>求职琐事</title>
+    <url>/2020/06/02/%E6%B1%82%E8%81%8C%E7%90%90%E4%BA%8B/</url>
+    <content><![CDATA[<blockquote>
+<p>注明：以下所有内容均已我本人为背景</p>
+</blockquote>
+<h3 id="学历像块砖"><a href="#学历像块砖" class="headerlink" title="学历像块砖"></a>学历像块砖</h3><p>在当今的社会大环境下，全国的应届高校毕业生似乎都是拴在一根绳上的蚂蚱，专科想去本科深造，本科想读研，读了硕士想读博士(读博或许没那么多´ｰ∀ｰ`)，心想着学历高总是一件好事。<a id="more"></a>可学习的过程中你要能忍受的住寂寞，实属不易，时间一长，不禁会怀疑自己：最想要的到底是什么？自己的梦想、最求是什么？虽是一根绳上的蚂蚱，但也要有自己喜欢的那片叶子啊！</p>
+
+<h3 id="经验如把刀"><a href="#经验如把刀" class="headerlink" title="经验如把刀"></a>经验如把刀</h3><p>有过求职经历的朋友都知道，<strong>工作经验</strong> 是否丰富是一大加分项，甚至比拟其他硬性条件，在校的文化课和专业课知识即使学的很好，也只是纸上谈兵，还需利刃般的工作经验。若把书本知识比作盾，那么左手持“盾”，右手持“刀”，方能开辟精彩职业人生！</p>
+<h3 id="软实力救命"><a href="#软实力救命" class="headerlink" title="软实力救命"></a>软实力救命</h3><p>职场的个人发展除了有硬实力来撑腰，还需软实力来辅助。如何提高自己的情商、如何掌握说话的技巧、如何学习和异性同事相处、如何提升自己的责任感和使命感等，这些需要用尽一生来去学习，最后让你的一生受益！</p>
+
+
 ]]></content>
       <categories>
         <category>随便写</category>
@@ -76,21 +105,24 @@
       </tags>
   </entry>
   <entry>
-    <title>求职琐事</title>
-    <url>/2020/06/02/%E6%B1%82%E8%81%8C%E7%90%90%E4%BA%8B/</url>
-    <content><![CDATA[<blockquote>
-<p>注明：以下所有内容均已我本人为背景</p>
+    <title>最新发现的hexo博客部署问题</title>
+    <url>/2023/04/20/%E6%9C%80%E6%96%B0%E5%8F%91%E7%8E%B0%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h3 id="时隔多日终于想起还有这个博客的存在！！"><a href="#时隔多日终于想起还有这个博客的存在！！" class="headerlink" title="时隔多日终于想起还有这个博客的存在！！"></a>时隔多日终于想起还有这个博客的存在！！</h3><p>在本地写好文案之后，生成、启动服务一气呵成，但在使用<code>hexo -deploy</code>后<strong>立刻</strong>打开自己的github pages站点文章却看不到，此时脑子里大大的问号(?)</p>
+<a id="more"></a>
+<p>在经过一番google后，终于弄明白是自己没有弄清github pages工作流程，现总结如下：</p>
+<ul>
+<li>在本地写好之后通过<code>git push</code>到github仓库中</li>
+<li>每个仓库都有GitHub Actions,详细用法请<a href="https://docs.github.com/zh/actions/learn-github-actions/understanding-github-actions" target="_blank" rel="noopener">点击</a>，下面总结在本项目中的用处：<blockquote>
+<p>将新代码推送到存储库的默认分支后触发GitHub 事件<br>创建一个新的workflow，每个workflow运行都会生成一个实时图表，说明运行进度<br>直到图表中出现绿色的√，则项目部署完毕</p>
 </blockquote>
-<h3 id="学历像块砖"><a href="#学历像块砖" class="headerlink" title="学历像块砖"></a>学历像块砖</h3><p>在当今的社会大环境下，全国的应届高校毕业生似乎都是拴在一根绳上的蚂蚱，专科想去本科深造，本科想读研，读了硕士想读博士(读博或许没那么多´ｰ∀ｰ`)，心想着学历高总是一件好事。<a id="more"></a>可学习的过程中你要能忍受的住寂寞，实属不易，时间一长，不禁会怀疑自己：最想要的到底是什么？自己的梦想、最求是什么？虽是一根绳上的蚂蚱，但也要有自己喜欢的那片叶子啊！</p>
-
-<h3 id="经验如把刀"><a href="#经验如把刀" class="headerlink" title="经验如把刀"></a>经验如把刀</h3><p>有过求职经历的朋友都知道，<strong>工作经验</strong> 是否丰富是一大加分项，甚至比拟其他硬性条件，在校的文化课和专业课知识即使学的很好，也只是纸上谈兵，还需利刃般的工作经验。若把书本知识比作盾，那么左手持“盾”，右手持“刀”，方能开辟精彩职业人生！</p>
-<h3 id="软实力救命"><a href="#软实力救命" class="headerlink" title="软实力救命"></a>软实力救命</h3><p>职场的个人发展除了有硬实力来撑腰，还需软实力来辅助。如何提高自己的情商、如何掌握说话的技巧、如何学习和异性同事相处、如何提升自己的责任感和使命感等，这些需要用尽一生来去学习，最后让你的一生受益！</p>
-
-
+</li>
+<li>打开github pages站点即能访问最新页面</li>
+</ul>
+<p>我忽略了上述整个过程，也是对GitHub Actions不够了解，再接再厉！！</p>
 ]]></content>
-      <categories>
-        <category>随便写</category>
-      </categories>
+      <tags>
+        <tag>永不再犯</tag>
+      </tags>
   </entry>
   <entry>
     <title>阿里云白嫖活动</title>
@@ -102,29 +134,5 @@
       <categories>
         <category>随便写</category>
       </categories>
-  </entry>
-  <entry>
-    <title>最新发现的hexo博客部署问题</title>
-    <url>/2023/04/20/%E6%9C%80%E6%96%B0%E5%8F%91%E7%8E%B0%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h3 id="时隔多日终于想起还有这个博客的存在！！"><a href="#时隔多日终于想起还有这个博客的存在！！" class="headerlink" title="时隔多日终于想起还有这个博客的存在！！"></a>时隔多日终于想起还有这个博客的存在！！</h3><p>在本地写好文案之后，生成、启动服务一气呵成，但在使用<code>hexo -deploy</code>后<strong>立刻</strong>打开自己的github pages站点文章却看不到，此时脑子里大大的问号(?)</p>
-<a id="more"></a>
-<p>在经过一番google后，终于弄明白是自己没有弄清github pages工作流程，现总结如下：<br>*在本地写好之后通过<code>git push</code>到github仓库中<br>*每个仓库都有GitHub Actions,详细用法请<a href="https://docs.github.com/zh/actions/learn-github-actions/understanding-github-actions" target="_blank" rel="noopener">点击</a>，下面总结在本项目中的用处：<br>    &gt;将新代码推送到存储库的默认分支后触发GitHub 事件<br>    &gt;创建一个新的workflow，每个workflow运行都会生成一个实时图表，说明运行进度<br>    &gt;直到图表中出现绿色的√，则项目部署完毕<br>*打开github pages站点即能访问最新页面</p>
-<p>我忽略了上述整个过程，也是对GitHub Actions不够了解，再接再厉！！</p>
-]]></content>
-      <tags>
-        <tag>永不再犯</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo命令那些事</title>
-    <url>/2020/06/02/hexo%E5%91%BD%E4%BB%A4%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
-    <content><![CDATA[<p><strong>hexo clean</strong> 用于清除本地静态文件和DB.json文件<br><strong>hexo g -d</strong> 生成静态文件并部署<br><strong>hexo server</strong> 在服务器启动中，Hexo 会监视文件变动并自动更新<br><strong>hexo generate –watch</strong>  监视文件变动并立即重新生成静态文件</p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>hexo命令</tag>
-      </tags>
   </entry>
 </search>
