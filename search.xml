@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo命令那些事</title>
-    <url>/2020/06/02/hexo%E5%91%BD%E4%BB%A4%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
-    <content><![CDATA[<p><strong>hexo clean</strong> 用于清除本地静态文件和DB.json文件<br><strong>hexo g -d</strong> 生成静态文件并部署<br><strong>hexo server</strong> 在服务器启动中，Hexo 会监视文件变动并自动更新<br><strong>hexo generate –watch</strong>  监视文件变动并立即重新生成静态文件</p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>hexo命令</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo博客个性化历程</title>
-    <url>/2020/06/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8E%86%E7%A8%8B/</url>
-    <content><![CDATA[<p><i>看</i>见别人靓丽且富有个性的博客，可把我馋死啦，可自己去实现各项功能的时候具烦啊啊啊啊啊啊！这hexo还是用swig来做模板引擎，之前闻所未闻(＃°Д°)，害！谁让自己是<b>菜鸡</b>呢（哭）<br>也不知道咱啥时候可以开始写技术博客，jio着自己啥也不会(￣m￣）)，也许真的要好好制定自己的学习路线了，就酱！拜~</p>
-]]></content>
-      <categories>
-        <category>随便写</category>
-      </categories>
-  </entry>
-  <entry>
     <title>node.js初体验</title>
     <url>/2020/06/07/node-js%E5%88%9D%E4%BD%93%E9%AA%8C/</url>
     <content><![CDATA[<p>先说一说ECMAScript标准的缺陷：</p>
@@ -73,6 +52,15 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo博客个性化历程</title>
+    <url>/2020/06/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<p><i>看</i>见别人靓丽且富有个性的博客，可把我馋死啦，可自己去实现各项功能的时候具烦啊啊啊啊啊啊！这hexo还是用swig来做模板引擎，之前闻所未闻(＃°Д°)，害！谁让自己是<b>菜鸡</b>呢（哭）<br>也不知道咱啥时候可以开始写技术博客，jio着自己啥也不会(￣m￣）)，也许真的要好好制定自己的学习路线了，就酱！拜~</p>
+]]></content>
+      <categories>
+        <category>随便写</category>
+      </categories>
+  </entry>
+  <entry>
     <title>新手填坑1/100</title>
     <url>/2020/05/29/%E6%96%B0%E6%89%8B%E5%A1%AB%E5%9D%911-100/</url>
     <content><![CDATA[<h3 id="初级BUG拯救"><a href="#初级BUG拯救" class="headerlink" title="初级BUG拯救"></a>初级BUG拯救</h3><p>搭建hexo中控制台出现以下错误：</p>
@@ -114,5 +102,29 @@
       <categories>
         <category>随便写</category>
       </categories>
+  </entry>
+  <entry>
+    <title>最新发现的hexo博客部署问题</title>
+    <url>/2023/04/20/%E6%9C%80%E6%96%B0%E5%8F%91%E7%8E%B0%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h3 id="时隔多日终于想起还有这个博客的存在！！"><a href="#时隔多日终于想起还有这个博客的存在！！" class="headerlink" title="时隔多日终于想起还有这个博客的存在！！"></a>时隔多日终于想起还有这个博客的存在！！</h3><p>在本地写好文案之后，生成、启动服务一气呵成，但在使用<code>hexo -deploy</code>后<strong>立刻</strong>打开自己的github pages站点文章却看不到，此时脑子里大大的问号(?)</p>
+<a id="more"></a>
+<p>在经过一番google后，终于弄明白是自己没有弄清github pages工作流程，现总结如下：<br>*在本地写好之后通过<code>git push</code>到github仓库中<br>*每个仓库都有GitHub Actions,详细用法请<a href="https://docs.github.com/zh/actions/learn-github-actions/understanding-github-actions" target="_blank" rel="noopener">点击</a>，下面总结在本项目中的用处：<br>    &gt;将新代码推送到存储库的默认分支后触发GitHub 事件<br>    &gt;创建一个新的workflow，每个workflow运行都会生成一个实时图表，说明运行进度<br>    &gt;直到图表中出现绿色的√，则项目部署完毕<br>*打开github pages站点即能访问最新页面</p>
+<p>我忽略了上述整个过程，也是对GitHub Actions不够了解，再接再厉！！</p>
+]]></content>
+      <tags>
+        <tag>永不再犯</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo命令那些事</title>
+    <url>/2020/06/02/hexo%E5%91%BD%E4%BB%A4%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
+    <content><![CDATA[<p><strong>hexo clean</strong> 用于清除本地静态文件和DB.json文件<br><strong>hexo g -d</strong> 生成静态文件并部署<br><strong>hexo server</strong> 在服务器启动中，Hexo 会监视文件变动并自动更新<br><strong>hexo generate –watch</strong>  监视文件变动并立即重新生成静态文件</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>hexo命令</tag>
+      </tags>
   </entry>
 </search>
