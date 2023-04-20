@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>hexo博客个性化历程</title>
+    <url>/2020/06/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<p><i>看</i>见别人靓丽且富有个性的博客，可把我馋死啦，可自己去实现各项功能的时候具烦啊啊啊啊啊啊！这hexo还是用swig来做模板引擎，之前闻所未闻(＃°Д°)，害！谁让自己是<b>菜鸡</b>呢（哭）<br>也不知道咱啥时候可以开始写技术博客，jio着自己啥也不会(￣m￣）)，也许真的要好好制定自己的学习路线了，就酱！拜~</p>
+]]></content>
+      <categories>
+        <category>随便写</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>node.js初体验</title>
+    <url>/2020/06/07/node-js%E5%88%9D%E4%BD%93%E9%AA%8C/</url>
+    <content><![CDATA[<p>先说一说ECMAScript标准的缺陷：</p>
+<ol>
+<li>没有模块系统</li>
+<li>标准库较少</li>
+<li>没有标准接口</li>
+<li>缺乏管理系统<a id="more"></a>
+
+</li>
+</ol>
+<p>nodejs完全弥补了上述所有缺陷，node应用由<strong>模块</strong>组成，采用<strong>commonJS</strong>模块规范。每一个文件就是一个模块，有自己的<strong><em>作用域</em></strong>。在一个文件里定义的<strong>变量、函数、类</strong>都是私有的，对于其他文件是不可用的(敲黑板！！)<br>模块的概念贯穿整个commonJS，对它的定义分三个方面：</p>
+<ul>
+<li>模块的引用</li>
+<li>模块的定义</li>
+<li>模块的标识</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>node初探</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo命令那些事</title>
+    <url>/2020/06/02/hexo%E5%91%BD%E4%BB%A4%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
+    <content><![CDATA[<p><strong>hexo clean</strong> 用于清除本地静态文件和DB.json文件<br><strong>hexo g -d</strong> 生成静态文件并部署<br><strong>hexo server</strong> 在服务器启动中，Hexo 会监视文件变动并自动更新<br><strong>hexo generate –watch</strong>  监视文件变动并立即重新生成静态文件</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>hexo命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>并查集的C++实现</title>
+    <url>/2023/04/03/%E5%B9%B6%E6%9F%A5%E9%9B%86%E7%9A%84C-%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<p>首先要搞懂并查集的概念：<br><em>对一类不相交集合的数据组合起来进行查询叫并查集</em><br>做此次笔记的起因是leetcode第724题：寻找数组的中心下标,网友评论说可以用并查集来实现，故来温习一下</p>
+<a id="more"></a>
+<h2 id="上代码"><a href="#上代码" class="headerlink" title="上代码"></a>上代码</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">ElemType</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> data; </span><br><span class="line">    <span class="keyword">int</span> parent; <span class="comment">//该元素的双亲在数组中的下标</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MaxSize = <span class="number">200</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span>  <span class="title">UnionFind</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    UnionFind(<span class="keyword">char</span> ch[], <span class="keyword">int</span> n);</span><br><span class="line">    ~UnionFind();</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">Find</span><span class="params">(<span class="keyword">char</span> x)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Union</span><span class="params">(<span class="keyword">char</span> x, <span class="keyword">char</span> y)</span></span>; <span class="comment">// 合并两个子集</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    ElemType elem[MaxSize];  <span class="comment">//双亲表示法存储</span></span><br><span class="line">    <span class="keyword">int</span> length; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>应用到本题中就是如下写法：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">pivotIndex</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">long</span> sum = <span class="number">0</span>; </span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> x:nums) sum += x;</span><br><span class="line">        <span class="keyword">long</span> sum1 = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;nums.<span class="built_in">size</span>(); ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            sum1 += nums[i];</span><br><span class="line">            <span class="keyword">if</span> (sum-sum1 == sum1-nums[i])</span><br><span class="line">                <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>但该题本意是使用数组的<strong>前缀和</strong>来解答：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">pivotIndex</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> total = accumulate(nums.<span class="built_in">begin</span>(), nums.<span class="built_in">end</span>(), <span class="number">0</span>);  <span class="comment">//所有元素之和</span></span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>; <span class="comment">//左侧元素之和</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="number">2</span> * sum + nums[i] == total) &#123;  <span class="comment">//左右元素之和相等（sum=total-sum-nums[i]）</span></span><br><span class="line">                <span class="keyword">return</span> i;</span><br><span class="line">            &#125;</span><br><span class="line">            sum += nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>事实上前面算法还可以继续优化，因为其时间复杂度在O(n),未完待续…</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>我的第一篇博客</title>
+    <url>/2019/06/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h3 id="Congratulation"><a href="#Congratulation" class="headerlink" title="Congratulation!"></a>Congratulation!</h3><p>这是第一次发表我的博客文章</p>
+
+<p><em>*test</em></p>
+]]></content>
+      <tags>
+        <tag>第一次发表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新手填坑1/100</title>
+    <url>/2020/05/29/%E6%96%B0%E6%89%8B%E5%A1%AB%E5%9D%911-100/</url>
+    <content><![CDATA[<h3 id="初级BUG拯救"><a href="#初级BUG拯救" class="headerlink" title="初级BUG拯救"></a>初级BUG拯救</h3><p>搭建hexo中控制台出现以下错误：</p>
+<p>YAMLException: can not read a block mapping entry....</p>
+
+<p>此类错误一般是由文章属性中<strong>缺少空格</strong>导致的，为一大忌，不可再犯！</p>
+]]></content>
+      <categories>
+        <category>BuG整合</category>
+      </categories>
+      <tags>
+        <tag>永不再犯</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>求职琐事</title>
+    <url>/2020/06/02/%E6%B1%82%E8%81%8C%E7%90%90%E4%BA%8B/</url>
+    <content><![CDATA[<blockquote>
+<p>注明：以下所有内容均已我本人为背景</p>
+</blockquote>
+<h3 id="学历像块砖"><a href="#学历像块砖" class="headerlink" title="学历像块砖"></a>学历像块砖</h3><p>在当今的社会大环境下，全国的应届高校毕业生似乎都是拴在一根绳上的蚂蚱，专科想去本科深造，本科想读研，读了硕士想读博士(读博或许没那么多´ｰ∀ｰ`)，心想着学历高总是一件好事。<a id="more"></a>可学习的过程中你要能忍受的住寂寞，实属不易，时间一长，不禁会怀疑自己：最想要的到底是什么？自己的梦想、最求是什么？虽是一根绳上的蚂蚱，但也要有自己喜欢的那片叶子啊！</p>
+
+<h3 id="经验如把刀"><a href="#经验如把刀" class="headerlink" title="经验如把刀"></a>经验如把刀</h3><p>有过求职经历的朋友都知道，<strong>工作经验</strong> 是否丰富是一大加分项，甚至比拟其他硬性条件，在校的文化课和专业课知识即使学的很好，也只是纸上谈兵，还需利刃般的工作经验。若把书本知识比作盾，那么左手持“盾”，右手持“刀”，方能开辟精彩职业人生！</p>
+<h3 id="软实力救命"><a href="#软实力救命" class="headerlink" title="软实力救命"></a>软实力救命</h3><p>职场的个人发展除了有硬实力来撑腰，还需软实力来辅助。如何提高自己的情商、如何掌握说话的技巧、如何学习和异性同事相处、如何提升自己的责任感和使命感等，这些需要用尽一生来去学习，最后让你的一生受益！</p>
+
+
+]]></content>
+      <categories>
+        <category>随便写</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>阿里云白嫖活动</title>
+    <url>/2020/06/02/%E9%98%BF%E9%87%8C%E4%BA%91%E7%99%BD%E5%AB%96%E6%B4%BB%E5%8A%A8/</url>
+    <content><![CDATA[<h3 id="阿里云免费试用来啦！"><a href="#阿里云免费试用来啦！" class="headerlink" title="阿里云免费试用来啦！"></a>阿里云免费试用来啦！</h3><p>今天登上阿里云准备搞一个认证，突然看见右下角有个xxx试用，我抱着是广告的怀疑态度点了进去,结果发现全是一个月的零元试用！！！这波便宜不占白不占啊(笑哭)，我再去康康(≧∇≦)ﾉ</p>
+
+<p><a href="https://free.aliyun.com" target="_blank" rel="noopener">连接在这</a></p>
+]]></content>
+      <categories>
+        <category>随便写</category>
+      </categories>
+  </entry>
+</search>
