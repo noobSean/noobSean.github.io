@@ -131,12 +131,12 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">4</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">9</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">10</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -189,6 +189,116 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/04/20/JS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.png">
+      <meta itemprop="name" content="Aaron Wang">
+      <meta itemprop="description" content="自用博客，解释权归本站所有™">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hedgehog's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/04/20/JS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="post-title-link" itemprop="url">JS基础知识</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-04-20 17:16:05 / 修改时间：23:42:27" itemprop="dateCreated datePublished" datetime="2023-04-20T17:16:05+08:00">2023-04-20</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2023/04/20/JS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2023/04/20/JS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="JS-变量类型"><a href="#JS-变量类型" class="headerlink" title="JS 变量类型"></a>JS 变量类型</h1><ol>
+<li><p>首先需要明确的是JS属于弱类型且是动态类型的语言，在大多数脚本语言和解释型语言中占多数<br>看一个示例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> foo = <span class="number">42</span>; <span class="comment">// foo is a number</span></span><br><span class="line"><span class="keyword">const</span> result = foo + <span class="string">"1"</span>; <span class="comment">// JavaScript coerces foo to a string, so it can be concatenated with the other operand</span></span><br><span class="line"><span class="built_in">console</span>.log(result); <span class="comment">// 421</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>上述实例中出现了<strong>强制隐式转换</strong>，需要和C、java中的<strong>强制类型转换</strong>做区分！</p>
+</li>
+<li><p>除了 Object 以外，所有类型都定义了原始值;除了<code>null</code>，所有原始类型都可以使用<code>typeof</code>运算符测试。(从概念上讲，<code>undefined</code>表示没有任何值，<code>null</code>表示没有任何对象) </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// JavaScript 诞生以来便如此</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">null</span> === <span class="string">"object"</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>===</code>会比较值和类型且不用类型转换，为保证程序的严谨，尽量都使用它；<code>==</code>在比较时，先进行类型转换，在比较值，如下两种情况推荐使用(tips:本处未提到Object.is()方法，日后用到再补充)</p>
+<blockquote>
+<p>判断对象的属性是否存在<br>判断函数的参数是否存在</p>
+</blockquote>
+</li>
+<li><p>let和var的区别</p>
+<blockquote>
+<p><code>var</code>是声明一个<em>全局</em>变量，let是声明一个<strong>块作用域</strong>的<em>局部</em>变量</p>
+</blockquote>
+</li>
+<li><p>JS可以先使用后声明变量，称之为变量提升。但是，提升后的变量将返回<code>undefined</code>值。<strong><em>由于存在变量提升，一个函数中所有的<code>var</code>语句应尽可能地放在接近函数顶部的地方。这个习惯将大大提升代码的清晰度</em></strong>。在ES6中<code>let</code>和<code>const</code>同样会被提升变量到代码块的顶部但是不会被赋予初始值。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(x); <span class="comment">// ReferenceError</span></span><br><span class="line"><span class="keyword">let</span> x = <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="页面生命周期事件"><a href="#页面生命周期事件" class="headerlink" title="页面生命周期事件"></a>页面生命周期事件</h2></li>
+<li><p>DOMContentLoaded事件：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.addEventListener(<span class="string">"DOMContentLoaded"</span>, ready);</span><br><span class="line"><span class="comment">// 不是 "document.onDOMContentLoaded = ..."</span></span><br></pre></td></tr></table></figure>
+<p>当 DOM 准备就绪时，document 上的 DOMContentLoaded 事件就会被触发。在这个阶段，我们可以将 JavaScript 应用于元素。</p>
+</li>
+<li><p>window.onload事件：当页面所有dom、外部资源加载完成后，就会触发window.onload</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -537,104 +647,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/02/%E6%B1%82%E8%81%8C%E7%90%90%E4%BA%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/boy.png">
-      <meta itemprop="name" content="Aaron Wang">
-      <meta itemprop="description" content="自用博客，解释权归本站所有™">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="hedgehog's BLOG">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/02/%E6%B1%82%E8%81%8C%E7%90%90%E4%BA%8B/" class="post-title-link" itemprop="url">求职琐事</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-06-02 21:16:41" itemprop="dateCreated datePublished" datetime="2020-06-02T21:16:41+08:00">2020-06-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-03 00:06:56" itemprop="dateModified" datetime="2020-06-03T00:06:56+08:00">2020-06-03</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%9A%8F%E4%BE%BF%E5%86%99/" itemprop="url" rel="index"><span itemprop="name">随便写</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/06/02/%E6%B1%82%E8%81%8C%E7%90%90%E4%BA%8B/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/06/02/%E6%B1%82%E8%81%8C%E7%90%90%E4%BA%8B/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>注明：以下所有内容均已我本人为背景</p>
-</blockquote>
-<h3 id="学历像块砖"><a href="#学历像块砖" class="headerlink" title="学历像块砖"></a>学历像块砖</h3><p>在当今的社会大环境下，全国的应届高校毕业生似乎都是拴在一根绳上的蚂蚱，专科想去本科深造，本科想读研，读了硕士想读博士(读博或许没那么多´ｰ∀ｰ`)，心想着学历高总是一件好事。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/06/02/%E6%B1%82%E8%81%8C%E7%90%90%E4%BA%8B/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -706,14 +718,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">

@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo博客个性化历程</title>
+    <url>/2020/06/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<p><i>看</i>见别人靓丽且富有个性的博客，可把我馋死啦，可自己去实现各项功能的时候具烦啊啊啊啊啊啊！这hexo还是用swig来做模板引擎，之前闻所未闻(＃°Д°)，害！谁让自己是<b>菜鸡</b>呢（哭）<br>也不知道咱啥时候可以开始写技术博客，jio着自己啥也不会(￣m￣）)，也许真的要好好制定自己的学习路线了，就酱！拜~</p>
+]]></content>
+      <categories>
+        <category>随便写</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hexo命令那些事</title>
+    <url>/2020/06/02/hexo%E5%91%BD%E4%BB%A4%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
+    <content><![CDATA[<p><strong>hexo clean</strong> 用于清除本地静态文件和DB.json文件<br><strong>hexo g -d</strong> 生成静态文件并部署<br><strong>hexo server</strong> 在服务器启动中，Hexo 会监视文件变动并自动更新<br><strong>hexo generate –watch</strong>  监视文件变动并立即重新生成静态文件</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>hexo命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JS基础知识</title>
+    <url>/2023/04/20/JS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h1 id="JS-变量类型"><a href="#JS-变量类型" class="headerlink" title="JS 变量类型"></a>JS 变量类型</h1><ol>
+<li><p>首先需要明确的是JS属于弱类型且是动态类型的语言，在大多数脚本语言和解释型语言中占多数<br>看一个示例：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> foo = <span class="number">42</span>; <span class="comment">// foo is a number</span></span><br><span class="line"><span class="keyword">const</span> result = foo + <span class="string">"1"</span>; <span class="comment">// JavaScript coerces foo to a string, so it can be concatenated with the other operand</span></span><br><span class="line"><span class="built_in">console</span>.log(result); <span class="comment">// 421</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>上述实例中出现了<strong>强制隐式转换</strong>，需要和C、java中的<strong>强制类型转换</strong>做区分！</p>
+</li>
+<li><p>除了 Object 以外，所有类型都定义了原始值;除了<code>null</code>，所有原始类型都可以使用<code>typeof</code>运算符测试。(从概念上讲，<code>undefined</code>表示没有任何值，<code>null</code>表示没有任何对象) </p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// JavaScript 诞生以来便如此</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">null</span> === <span class="string">"object"</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>===</code>会比较值和类型且不用类型转换，为保证程序的严谨，尽量都使用它；<code>==</code>在比较时，先进行类型转换，在比较值，如下两种情况推荐使用(tips:本处未提到Object.is()方法，日后用到再补充)</p>
+<blockquote>
+<p>判断对象的属性是否存在<br>判断函数的参数是否存在</p>
+</blockquote>
+</li>
+<li><p>let和var的区别</p>
+<blockquote>
+<p><code>var</code>是声明一个<em>全局</em>变量，let是声明一个<strong>块作用域</strong>的<em>局部</em>变量</p>
+</blockquote>
+</li>
+<li><p>JS可以先使用后声明变量，称之为变量提升。但是，提升后的变量将返回<code>undefined</code>值。<strong><em>由于存在变量提升，一个函数中所有的<code>var</code>语句应尽可能地放在接近函数顶部的地方。这个习惯将大大提升代码的清晰度</em></strong>。在ES6中<code>let</code>和<code>const</code>同样会被提升变量到代码块的顶部但是不会被赋予初始值。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(x); <span class="comment">// ReferenceError</span></span><br><span class="line"><span class="keyword">let</span> x = <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="页面生命周期事件"><a href="#页面生命周期事件" class="headerlink" title="页面生命周期事件"></a>页面生命周期事件</h2></li>
+<li><p>DOMContentLoaded事件：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">document</span>.addEventListener(<span class="string">"DOMContentLoaded"</span>, ready);</span><br><span class="line"><span class="comment">// 不是 "document.onDOMContentLoaded = ..."</span></span><br></pre></td></tr></table></figure>
+<p>当 DOM 准备就绪时，document 上的 DOMContentLoaded 事件就会被触发。在这个阶段，我们可以将 JavaScript 应用于元素。</p>
+</li>
+<li><p>window.onload事件：当页面所有dom、外部资源加载完成后，就会触发window.onload</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+  </entry>
+  <entry>
     <title>node.js初体验</title>
     <url>/2020/06/07/node-js%E5%88%9D%E4%BD%93%E9%AA%8C/</url>
     <content><![CDATA[<p>先说一说ECMAScript标准的缺陷：</p>
@@ -27,24 +85,14 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo博客个性化历程</title>
-    <url>/2020/06/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8E%86%E7%A8%8B/</url>
-    <content><![CDATA[<p><i>看</i>见别人靓丽且富有个性的博客，可把我馋死啦，可自己去实现各项功能的时候具烦啊啊啊啊啊啊！这hexo还是用swig来做模板引擎，之前闻所未闻(＃°Д°)，害！谁让自己是<b>菜鸡</b>呢（哭）<br>也不知道咱啥时候可以开始写技术博客，jio着自己啥也不会(￣m￣）)，也许真的要好好制定自己的学习路线了，就酱！拜~</p>
+    <title>我的第一篇博客</title>
+    <url>/2019/06/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h3 id="Congratulation"><a href="#Congratulation" class="headerlink" title="Congratulation!"></a>Congratulation!</h3><p>这是第一次发表我的博客文章</p>
+
+<p><em>*test</em></p>
 ]]></content>
-      <categories>
-        <category>随便写</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>hexo命令那些事</title>
-    <url>/2020/06/02/hexo%E5%91%BD%E4%BB%A4%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
-    <content><![CDATA[<p><strong>hexo clean</strong> 用于清除本地静态文件和DB.json文件<br><strong>hexo g -d</strong> 生成静态文件并部署<br><strong>hexo server</strong> 在服务器启动中，Hexo 会监视文件变动并自动更新<br><strong>hexo generate –watch</strong>  监视文件变动并立即重新生成静态文件</p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
       <tags>
-        <tag>hexo命令</tag>
+        <tag>第一次发表</tag>
       </tags>
   </entry>
   <entry>
@@ -62,14 +110,18 @@
 ]]></content>
   </entry>
   <entry>
-    <title>我的第一篇博客</title>
-    <url>/2019/06/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h3 id="Congratulation"><a href="#Congratulation" class="headerlink" title="Congratulation!"></a>Congratulation!</h3><p>这是第一次发表我的博客文章</p>
+    <title>新手填坑1/100</title>
+    <url>/2020/05/29/%E6%96%B0%E6%89%8B%E5%A1%AB%E5%9D%911-100/</url>
+    <content><![CDATA[<h3 id="初级BUG拯救"><a href="#初级BUG拯救" class="headerlink" title="初级BUG拯救"></a>初级BUG拯救</h3><p>搭建hexo中控制台出现以下错误：</p>
+<p>YAMLException: can not read a block mapping entry....</p>
 
-<p><em>*test</em></p>
+<p>此类错误一般是由文章属性中<strong>缺少空格</strong>导致的，为一大忌，不可再犯！</p>
 ]]></content>
+      <categories>
+        <category>BuG整合</category>
+      </categories>
       <tags>
-        <tag>第一次发表</tag>
+        <tag>永不再犯</tag>
       </tags>
   </entry>
   <entry>
@@ -90,19 +142,15 @@
       </categories>
   </entry>
   <entry>
-    <title>新手填坑1/100</title>
-    <url>/2020/05/29/%E6%96%B0%E6%89%8B%E5%A1%AB%E5%9D%911-100/</url>
-    <content><![CDATA[<h3 id="初级BUG拯救"><a href="#初级BUG拯救" class="headerlink" title="初级BUG拯救"></a>初级BUG拯救</h3><p>搭建hexo中控制台出现以下错误：</p>
-<p>YAMLException: can not read a block mapping entry....</p>
+    <title>阿里云白嫖活动</title>
+    <url>/2020/06/02/%E9%98%BF%E9%87%8C%E4%BA%91%E7%99%BD%E5%AB%96%E6%B4%BB%E5%8A%A8/</url>
+    <content><![CDATA[<h3 id="阿里云免费试用来啦！"><a href="#阿里云免费试用来啦！" class="headerlink" title="阿里云免费试用来啦！"></a>阿里云免费试用来啦！</h3><p>今天登上阿里云准备搞一个认证，突然看见右下角有个xxx试用，我抱着是广告的怀疑态度点了进去,结果发现全是一个月的零元试用！！！这波便宜不占白不占啊(笑哭)，我再去康康(≧∇≦)ﾉ</p>
 
-<p>此类错误一般是由文章属性中<strong>缺少空格</strong>导致的，为一大忌，不可再犯！</p>
+<p><a href="https://free.aliyun.com" target="_blank" rel="noopener">连接在这</a></p>
 ]]></content>
       <categories>
-        <category>BuG整合</category>
+        <category>随便写</category>
       </categories>
-      <tags>
-        <tag>永不再犯</tag>
-      </tags>
   </entry>
   <entry>
     <title>最新发现的hexo博客部署问题</title>
@@ -123,16 +171,5 @@
       <tags>
         <tag>永不再犯</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>阿里云白嫖活动</title>
-    <url>/2020/06/02/%E9%98%BF%E9%87%8C%E4%BA%91%E7%99%BD%E5%AB%96%E6%B4%BB%E5%8A%A8/</url>
-    <content><![CDATA[<h3 id="阿里云免费试用来啦！"><a href="#阿里云免费试用来啦！" class="headerlink" title="阿里云免费试用来啦！"></a>阿里云免费试用来啦！</h3><p>今天登上阿里云准备搞一个认证，突然看见右下角有个xxx试用，我抱着是广告的怀疑态度点了进去,结果发现全是一个月的零元试用！！！这波便宜不占白不占啊(笑哭)，我再去康康(≧∇≦)ﾉ</p>
-
-<p><a href="https://free.aliyun.com" target="_blank" rel="noopener">连接在这</a></p>
-]]></content>
-      <categories>
-        <category>随便写</category>
-      </categories>
   </entry>
 </search>
